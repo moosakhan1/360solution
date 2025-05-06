@@ -22,19 +22,20 @@ const products = [
   {
     id: 4,
     productName: "Men's Leather Jacket",
-    image: "https://images.pexels.com/photos/428341/pexels-photo-428341.jpeg",
+    image: "https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg",
     category: "men",
   },
   {
     id: 5,
     productName: "Men's Hoodie",
-    image: "https://images.pexels.com/photos/428342/pexels-photo-428342.jpeg",
+    image: "https://images.pexels.com/photos/1808397/pexels-photo-1808397.jpeg",
     category: "men",
   },
   {
     id: 6,
     productName: "Women's Summer Dress",
-    image: "https://images.pexels.com/photos/428343/pexels-photo-428343.jpeg",
+    image:
+      "https://images.pexels.com/photos/14090498/pexels-photo-14090498.jpeg",
     category: "women",
   },
   {
