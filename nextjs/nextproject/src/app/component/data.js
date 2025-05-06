@@ -2,21 +2,22 @@ const products = [
   {
     id: 1,
     productName: "Men's Casual Shirt",
-    image: "https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg",
+    image:
+      "https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=",
     category: "men",
   },
   {
     id: 2,
     productName: "Men's Formal Suit",
     image:
-      "https://cdn.pixabay.com/photo/2016/02/23/04/52/model-1216916_1280.jpg",
+      "https://media.istockphoto.com/id/1367421610/photo/view-of-young-man-using-a-smartphone-at-night-time-with-city-view-landscape-in-the-background.jpg?s=612x612&w=0&k=20&c=R-xLj6I24tWVuOrO2qHVwnmyILwCXmcHVQk9MAr4bmg=",
     category: "men",
   },
   {
     id: 3,
     productName: "Men's Denim Jeans",
     image:
-      "https://cdn.pixabay.com/photo/2022/10/07/08/23/girl-7504499_1280.jpg",
+      "https://media.istockphoto.com/id/1334702614/photo/young-man-with-laptop-and-coffee-working-indoors-home-office-concept.jpg?s=612x612&w=0&k=20&c=qAhnrFIMKaObf7Ybf19FVE605g5OVcR7CSt0E3xYSMo=",
     category: "men",
   },
   {
@@ -41,13 +42,15 @@ const products = [
   {
     id: 7,
     productName: "Women's Blouse",
-    image: "https://images.pexels.com/photos/428344/pexels-photo-428344.jpeg",
+    image:
+      "https://cdn.pixabay.com/photo/2022/07/06/12/58/woman-7305088_1280.jpg",
     category: "women",
   },
   {
     id: 8,
     productName: "Women's Jeans",
-    image: "https://images.pexels.com/photos/428345/pexels-photo-428345.jpeg",
+    image:
+      "https://cdn.pixabay.com/photo/2020/09/29/13/27/woman-5612838_1280.jpg",
     category: "women",
   },
   {
@@ -59,37 +62,43 @@ const products = [
   {
     id: 10,
     productName: "Women's Skirt",
-    image: "https://images.pexels.com/photos/428347/pexels-photo-428347.jpeg",
+    image:
+      "https://cdn.pixabay.com/photo/2016/07/11/15/43/woman-1509959_1280.jpg",
     category: "women",
   },
   {
     id: 11,
     productName: "Kids' T-Shirt",
-    image: "https://images.pexels.com/photos/428348/pexels-photo-428348.jpeg",
+    image:
+      "https://cdn.pixabay.com/photo/2015/11/19/15/37/child-1051288_1280.jpg",
     category: "kids",
   },
   {
     id: 12,
     productName: "Kids' Jeans",
-    image: "https://images.pexels.com/photos/428349/pexels-photo-428349.jpeg",
+    image:
+      "https://cdn.pixabay.com/photo/2017/10/18/11/14/books-2863724_1280.jpg",
     category: "kids",
   },
   {
     id: 13,
     productName: "Kids' Jacket",
-    image: "https://images.pexels.com/photos/428350/pexels-photo-428350.jpeg",
+    image:
+      "https://cdn.pixabay.com/photo/2024/06/20/12/26/child-8842052_1280.jpg",
     category: "kids",
   },
   {
     id: 14,
     productName: "Kids' Dress",
-    image: "https://images.pexels.com/photos/428351/pexels-photo-428351.jpeg",
+    image:
+      "https://cdn.pixabay.com/photo/2016/11/29/13/56/asian-1870022_1280.jpg",
     category: "kids",
   },
   {
     id: 15,
     productName: "Kids' Shorts",
-    image: "https://images.pexels.com/photos/428352/pexels-photo-428352.jpeg",
+    image:
+      "https://media.istockphoto.com/id/498335341/photo/its-gonna-be-a-while-until-we-get-to-sleep.jpg?s=612x612&w=0&k=20&c=UWCqV_4pgG4BwfQGOFR3r4nfiAReGsq-CCbCD4Fgq7c=",
     category: "kids",
   },
 ];

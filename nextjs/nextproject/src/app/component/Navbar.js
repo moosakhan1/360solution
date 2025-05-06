@@ -1,89 +1,79 @@
+"use client";
+
 export default function Navbar({ setSearchQuery }) {
   return (
-    <>
-      <nav
-        className="relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
-        data-twe-navbar-ref
-      >
-        <div className="flex w-full flex-wrap items-center justify-between px-3">
-          <div className="ms-2 md:me-2">
-            <a className="text-xl text-black dark:text-white" href="#">
-              Navbar
-            </a>
+    <nav className="bg-zinc-50 dark:bg-neutral-700 shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo / Brand */}
+          <div className="flex-shrink-0 text-xl text-black dark:text-white font-bold">
+            Navbar
           </div>
-          <button
-            className="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-            type="button"
-            data-twe-collapse-init
-            data-twe-target="#navbarSupportedContent14"
-            aria-controls="navbarSupportedContent14"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+
+          {/* Toggle Button (Mobile) */}
+          {/* <div className="lg:hidden">
+            <button
+              // onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="text-black dark:text-white focus:outline-none"
+            >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
-                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fillRule="evenodd"
-                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                  clipRule="evenodd"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
-            </span>
-          </button>
+            </button>
+          </div> */}
 
-          <div
-            className="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-            id="navbarSupportedContent14"
-            data-twe-collapse-item
-          >
-            <ul
-              className="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
-              data-twe-navbar-nav-ref
+          {/* Navbar links (desktop) */}
+          <div className="hidden lg:flex space-x-6 items-center">
+            <a href="#" className="text-black dark:text-white hover:underline">
+              Home
+            </a>
+            <a
+              href="#"
+              className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white"
             >
-              <li
-                className="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
-                data-twe-nav-item-ref
-              >
-                <a
-                  className="text-black dark:text-white lg:px-2"
-                  aria-current="page"
-                  href="#"
-                  data-twe-nav-link-ref
-                >
-                  Home
-                </a>
-              </li>
-              <li
-                className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-                data-twe-nav-item-ref
-              >
-                <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                  href="#"
-                  data-twe-nav-link-ref
-                >
-                  Link
-                </a>
-              </li>
-            </ul>
-            <div className="w-[300px] lg:pe-2">
-              <div className="relative flex w-full flex-wrap items-stretch">
-                <input
-                  type="search"
-                  className="relative m-0 -me-0.5 block w-[1px] min-w-0 flex-auto rounded-s border border-solid border-secondary-500 bg-transparent bg-clip-padding px-3 py-1 text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
-                  placeholder="Search"
-                  aria-label="Search"
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-              </div>
-            </div>
+              Link
+            </a>
+            {/* Search input */}
+            <input
+              type="text"
+              placeholder="Search"
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="px-3 py-1 border rounded-md text-black dark:text-white dark:bg-neutral-800"
+            />
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+
+      {/* Mobile menu (toggle) */}
+      <div className="lg:hidden px-4 pb-4 space-y-3">
+        <a href="#" className="block text-black dark:text-white">
+          Home
+        </a>
+        <a
+          href="#"
+          className="block text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white"
+        >
+          Link
+        </a>
+        <input
+          type="text"
+          placeholder="Search"
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full px-3 py-1 border rounded-md text-black dark:text-white dark:bg-neutral-800"
+        />
+      </div>
+    </nav>
   );
 }
